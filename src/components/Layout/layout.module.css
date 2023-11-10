@@ -1,0 +1,28 @@
+.brandLogo a {
+  font-size: 34px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--pcolor);
+}
+.nav_links a {
+  color: var(--pcolor);
+}
+.download_btn {
+  background: var(--gradientcolor);
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.download_btn p {
+  background: #fff;
+  color: var(--pcolor);
+  padding: 5px 20px;
+  margin: 0;
+  border-radius: 3px;
+  transition: all 250ms ease-in-out;
+}
+.download_btn:hover .module {
+  background-color: var(--pcolor);
+  color: #fff;
+}
+
