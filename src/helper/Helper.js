@@ -125,10 +125,11 @@ export const aboutUs = [
   },
   {
     img: require("../assets/img/aboutus2.png"),
-    para: "Select your postie (traveler) by desired search criterias like delivery date, volume and destination, etc. and view his or her reviews. Our posties published thiers offers on the platform, providing you with the transportation cost, the delivery date and much more. After you have booked an offer you can contacted your postie directly. Depending on the destination and degree of urgency, you can contact your postie directly and negotiate the transportation fees. After the delivery you have the possibility to rate your your postie."
-    },
-    {
+    para: "Select your postie (traveler) by desired search criterias like delivery date, volume and destination, etc. and view his or her reviews. Our posties published thiers offers on the platform, providing you with the transportation cost, the delivery date and much more. After you have booked an offer you can contacted your postie directly. Depending on the destination and degree of urgency, you can contact your postie directly and negotiate the transportation fees. After the delivery you have the possibility to rate your your postie.",
+  },
+  {
     img: require("../assets/img/aboutus3.png"),
-para: "Your shipment will be provided with a tracking number or QR code. You can use this code to track your shipment online from the convenience of your home. Your order is delivered at its destination to a pickup relay close to the recipient and handed over directly to the recipientin return for a validating signature."
-    }
+    para: "Your shipment will be provided with a tracking number or QR code. You can use this code to track your shipment online from the convenience of your home. Your order is delivered at its destination to a pickup relay close to the recipient and handed over directly to the recipientin return for a validating signature.",
+  },
 ];
+export const nav = ["Home", "Become a Postie", "Postier for Business", "About us"];

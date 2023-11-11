@@ -5,6 +5,7 @@ import SectionOne from "./sections/SectionOne";
 import { sections } from "../../helper/Helper";
 import SectionTwo from "./sections/SectionTwo";
 import SectionThree from "./sections/SectionThree";
+import Footer from "../../components/Layout/Footer";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       })}
       <SectionTwo/>
       <SectionThree/>
+      <Footer/>
     </div>
   );
 };

@@ -25,4 +25,37 @@
   background-color: var(--pcolor);
   color: #fff;
 }
+.footer_wrap {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+.footer_wrap ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding-left: 0;
+}
+.footer_wrap li {
+  font-size: clamp(14px, 0.8vw, 16px);
+  color: #fff;
+}
+.footer_wrap h4 {
+  font-size: clamp(16px, 1vw, 20px);
+  color: #fff;
+  margin-bottom: 0;
+}
 
+@media screen and (max-width: 567px) {
+  .footer_wrap {
+    align-items: start;
+    margin-top: 40px;
+  }
+  .footer_wrap ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
