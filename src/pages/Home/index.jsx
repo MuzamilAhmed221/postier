@@ -13,7 +13,7 @@ const Home = () => {
       <_Navbar />
       <HeroSections />
       {sections?.map((items, index) => {
-        return <SectionOne key={index} items={items} />;
+        return <SectionOne   key={index} items={items} />;
       })}
       <SectionTwo/>
       <SectionThree/>

@@ -6,6 +6,30 @@
   margin: 0;
   padding: 0;
 }
+/* html {
+  scroll-behavior: smooth;
+} */
+/* scrollBar start */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #101010;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pcolor);
+}
+/* scrollBar end */
 body {
   font-family: "Rubik" !important;
   overflow-x: hidden;

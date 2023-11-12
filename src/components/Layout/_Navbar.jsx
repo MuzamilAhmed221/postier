@@ -9,7 +9,8 @@ import {
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styles from "./layout.module.css";
-import {HiMenu} from 'react-icons/hi'
+import { HiMenu } from "react-icons/hi";
+import { navItems } from "../../helper/Helper";
 
 const _Navbar = (props) => {
   const [show, setShow] = useState(false);
@@ -37,15 +38,17 @@ const _Navbar = (props) => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className={`gap-md-5 gap-sm-1  ${styles.nav_links}`}>
-                <Link className={`p-lg-4${styles.nav_links}`}>Home</Link>
-                <Link className={`p-lg-4${styles.nav_links}`}>
-                  Become a Postie
-                </Link>
-
-                <Link className={`p-lg-4${styles.nav_links}`}>
-                  Postier of Business
-                </Link>
-                <Link className={`p-lg-4${styles.nav_links}`}>About us</Link>
+                {navItems.map((item, index) => {
+                  return (
+                    <a
+                      href={`#${item}`}
+                      key={index}
+                      className={`p-lg-4${styles.nav_links}`}
+                    >
+                      {item}
+                    </a>
+                  );
+                })}
               </Nav>
             </Offcanvas.Body>
           </Offcanvas>
@@ -54,14 +57,9 @@ const _Navbar = (props) => {
             className="me-2 fs-2 d-md-none"
             variant="outline"
           >
-            <HiMenu/>
+            <HiMenu />
           </Button>
-          {/* <button
-            className={` d-none d-md-block rounded-3 ${styles.download_btn}`}
-            variant="outline-primary"
-          >
-            <p className="px-3 py-1 ">Download</p>
-          </button> */}
+        
           <button className={`d-none d-md-block ${styles.download_btn}`}>
             <p className={`${styles.module}`}>Download</p>
           </button>

@@ -57,14 +57,16 @@
 .sectionOne_wrap {
   margin-top: 100px;
 }
-h2 {
+.sectionOne_wrap h2,.aboutus_text {
   font-size: clamp(30px, 5vw, 50px);
   font-weight: 800;
+  text-transform: capitalize;
 }
 .wave {
   width: 100%;
   height: 100px;
 }
+
 .sectionOneStep {
   /* background-color: red; */
   display: flex;
@@ -86,13 +88,13 @@ h2 {
   padding: 5px;
   border-radius: 10px;
   border: 7px solid #fff;
-  rotate: 45deg;
+ transform: rotate(45deg);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .step p {
-  rotate: -45deg;
+transform: rotate(-45deg);
   margin: 0px;
   font-size: 18px;
   text-align: center;
@@ -123,9 +125,9 @@ h2 {
   height: 130px;
   border-radius: 100px;
   background-color: #fff;
-  box-shadow: 1px -1px 9px 4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 1px -1px 9px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px -1px 9px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px -1px 9px 4px rgba(0, 0, 0, 0.50);
+  -webkit-box-shadow: 1px -1px 9px 4px rgba(0, 0, 0, 0.50);
+  -moz-box-shadow: 1px -1px 9px 4px rgba(0, 0, 0, 0.50);
   background-position: center;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -150,13 +152,13 @@ h2 {
   background-repeat: no-repeat;
 }
 .sectionthree_btn_wrap button {
-  width:250px;
+  width: 250px;
   height: 70px;
   border-radius: 10px;
   border: none;
   outline: none;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .sectionthree_btn_wrap button:first-child {
@@ -166,7 +168,7 @@ h2 {
   background-image: url(../assets/img/appstore.png);
 }
 @media screen and (max-width: 567px) {
-  .hero_rightImg_wrap > div{
+  .hero_rightImg_wrap > div {
     height: 50vh;
   }
   .sectionOne_steps_wrap {

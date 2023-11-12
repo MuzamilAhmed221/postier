@@ -4,7 +4,7 @@ import styles from "../../../css/home.module.css";
 
 const HeroSections = () => {
   return (
-    <div className="mt-md-5">
+    <div className="mt-md-5" id="Home">
       <Container>
         <Row className="">
           <Col className={styles.hero_leftText_wrap} md={"7"}>

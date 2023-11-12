@@ -1,13 +1,12 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../../../css/home.module.css";
-import wave from "../../../assets/img/Vector 15.svg";
 
 const SectionOne = (props) => {
-  const { heading, para, bottom_description, rows, inner_heading } =
+  const { heading, para, bottom_description, rows, inner_heading ,id} =
     props?.items;
   return (
-    <div className={`${styles.sectionOne_wrap}`}>
+    <div className={`${styles.sectionOne_wrap}`} id={id}>
       <Container>
         <Row className={`text-center `}>
           <h2 className="">{heading}</h2>

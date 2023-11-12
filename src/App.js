@@ -5,7 +5,7 @@ import Home from './pages/Home';
 
 function App() {
   return (
-<Router>
+<Router basename="/postier">
   <Routes>
     <Route path='/' element={<Home/>} />  </Routes>
 </Router>

@@ -1,14 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import styles from "./layout.module.css";
-import { nav } from "../../helper/Helper";
+import { navItems } from "../../helper/Helper";
 
 const Footer = () => {
   return (
     <Container fluid className={styles.footer_wrap}>
       <ul>
-        {nav.map((item, index) => {
-          return <li key={index}>{item}</li>;
+        {navItems.map((item, index) => {
+          return <li key={index}><a href={`#${item}`}>{item}</a></li>;
         })}
       </ul>
       <h4>@info@postier.org</h4>

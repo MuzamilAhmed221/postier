@@ -5,8 +5,8 @@ import { aboutUs } from "../../../helper/Helper";
 
 const SectionTwo = () => {
   return (
-    <Container fluid className="text-center mt-5 px-0">
-      <h2>About us</h2>
+    <Container fluid className="text-center mt-5 px-0" id="About us">
+      <h2 className={styles.aboutus_text}>About us</h2>
       <p>
         Postier: An intermediary platform for the dispatch of letters, documents
         and parcels. People who wish to send items within theirs country and

@@ -1,6 +1,7 @@
 export const sections = [
   {
     section: "sectionOne",
+    id:"Become a Postie",
     heading: "How it Works",
     para: "Do you want to send documents or packages cheeply and securely?​  Sign up and find someone who is travelling to deliver your post. Send your post and track your delivery during each step of the way.",
     bottom_description:
@@ -37,6 +38,7 @@ export const sections = [
   },
   {
     section: "sectionTwo",
+    id:'Postier for Business',
     para: "You want to take and deliver shipments on your journey? Become a member and verify your account. Add your trip and get reservation requests. Collect and deliver the shipments.",
     heading: "You want to be paid for travelling?",
     bottom_description: "",
@@ -132,4 +134,4 @@ export const aboutUs = [
     para: "Your shipment will be provided with a tracking number or QR code. You can use this code to track your shipment online from the convenience of your home. Your order is delivered at its destination to a pickup relay close to the recipient and handed over directly to the recipientin return for a validating signature.",
   },
 ];
-export const nav = ["Home", "Become a Postie", "Postier for Business", "About us"];
+export const navItems = ["Home", "Become a Postie", "Postier for Business", "About us"];
